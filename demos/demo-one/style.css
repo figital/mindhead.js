@@ -1,0 +1,63 @@
+body {
+	font-family:sans-serif;
+	margin:0px;
+	padding:0px;
+
+
+}
+
+h1 {
+	font-size:12px;
+	margin:10px;
+	font-weight:normal;
+}
+
+.shadow {
+	box-shadow: 2px 2px 4px #ccc; 
+}
+
+#panel {
+	font-size:25px;
+	width:200px;
+	margin:10px;
+	border:1px solid black;
+	padding:15px;
+	background-color:#fffff6;
+}
+#timeval {
+	color:#999;
+}
+
+#reward {
+	position:absolute;
+	right:20px;
+	top:20px;
+	height:180px;
+	width:180px;
+	background-color:orange;
+	border:1px solid black;
+}
+#box {
+	position:absolute;
+	bottom:0px;
+	width:80px;
+	left:45px;
+	border:0px solid black;
+	background-color:red;height:40px;
+}
+
+#avg {
+	position:absolute;
+	bottom:0px;
+	width:80px;
+	left:45px;
+	border-top:2px solid green;
+}
+
+#threshold {
+	position:absolute;
+	bottom:50px;
+	width:80px;
+	left:45px;
+	border-top:1px dotted yellow;
+}
