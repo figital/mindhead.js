@@ -1,4 +1,4 @@
-Demonstration scripts for EEG Neurofeedback and HTML5.
+Demonstration scripts and "protodemos" of EEG Neurofeedback using HTML5.
 
 Demo-One is a self-contained folder and is desgined to provide a common visual starting point for discussion among practitioners of both neurofeedback and HTML5.
 
