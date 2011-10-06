@@ -1,10 +1,12 @@
 <html>
 <head>
 	<title>mindhead.js: Demo One</title>
-	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jquery.random.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	<script src="main.js"></script>
+	
+	<script src="js/main.js"></script>
 </head>
 <body>
 
@@ -13,6 +15,9 @@
 	<div id="panel" class="shadow">
 		&micro;V: <span id="timeval">0</span><br>
 		Avg: <span id="avgval">?</span>
+		<div style="font-size:12px;margin-top:6px;color:#999;">
+		Max: <span id="maxval">0</span> Min: <span id="minval">0</span>
+		</div>
 	</div>
 
 

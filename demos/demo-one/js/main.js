@@ -1,5 +1,6 @@
 
 (function($){
+
 	// forgot where I grabbed this average function 
 	Array.prototype.avg = function() {
 		var av = 0;
@@ -13,20 +14,32 @@
 		return av/cnt;
 	}
 
+	var minval = 0;
+	var maxval = 0;
 
 	sampleRate = 120; // how fast should the number be refreshed from the network and redrawn on screen?
-	threshold = 9.5; // a fake number for demo purposes, lower than the threshold triggers visualization
+	threshold = 1; // a fake number for demo purposes, lower than the threshold triggers visualization
 	boxmax = 300; // limit the box size
 	boxratio = 5; // multiply the box height if necessary
-	queueSize = 20; // quick running average size for demo
+	queueSize = 10; // quick running average size for demo
 	debug = false; // output debug info to console.log?
 	data = new Array; //  array to store samples for average/threshold
+
 	
 	var refreshId = setInterval(function() {
 
+		var minval = parseFloat($("#minval").text());
+		var maxval = parseFloat($("#maxval").text());
 
-		sample = random(1);
-		height = parseFloat(sample); // make the box bigger
+		sample = $.random(2400);
+		uv = parseFloat((sample - 1200) / 40).toFixed(1);
+		height = uv;
+		
+
+
+		if (uv < minval) { $("#minval").text(uv); }
+		if (uv > maxval) { $("#maxval").text(uv); }
+		
 
 		if (height > boxmax) { height = boxmax; } // cap the height of the box
 
@@ -36,9 +49,14 @@
 		if (data.length > queueSize) { 
 			data.pop(); 
 		}
+
+
 		var average = Math.round(data.avg()).toFixed(2);
 		
+		$("#timeval").html(uv);
 		$("#avgval").html(average);
+
+
 
 		$("#box").animate({
 			height: height * boxratio + "px"
@@ -52,7 +70,7 @@
 		} else {
 			$("#reward").css("background-color", "white");
 		}
-		
+
 		data.unshift(height);
 		
 	}, sampleRate);
