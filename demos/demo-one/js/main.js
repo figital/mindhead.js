@@ -59,7 +59,8 @@
 
 
 		$("#box").animate({
-			height: height * boxratio + "px"
+			height: height * boxratio + "px",
+			// width: height * boxratio + "px"
 			}, sampleRate);
 		$("#avg").animate({
 			height: average * boxratio + "px"
