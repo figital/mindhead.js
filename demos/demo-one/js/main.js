@@ -20,7 +20,7 @@
 	sampleRate = 120; // how fast should the number be refreshed from the network and redrawn on screen?
 	threshold = 1; // a fake number for demo purposes, lower than the threshold triggers visualization
 	boxmax = 300; // limit the box size
-	boxratio = 5; // multiply the box height if necessary
+	boxratio = 2; // multiply the box height if necessary
 	queueSize = 10; // quick running average size for demo
 	debug = false; // output debug info to console.log?
 	data = new Array; //  array to store samples for average/threshold
@@ -31,8 +31,8 @@
 		var minval = parseFloat($("#minval").text());
 		var maxval = parseFloat($("#maxval").text());
 
-		sample = $.random(2400);
-		uv = parseFloat((sample - 1200) / 40).toFixed(1);
+		sample = $.random(2143) + 160;
+		uv = parseFloat((sample - 1200) / 5.53).toFixed(1);
 		height = uv;
 		
 
