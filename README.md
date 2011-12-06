@@ -1,3 +1,7 @@
+mindhead will use bossk: https://github.com/figital/bossk
+
+(updates coming soon ... sorry for the delay!!)
+
 Demonstration scripts and "protodemos" of EEG Neurofeedback using HTML5.
 
 Trello Project Board: https://trello.com/board/mindhead-js/4e9700ebd9cc1c00000130ac
