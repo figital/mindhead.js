@@ -13,3 +13,6 @@ Just load it up in the latest version of something like Google Chrome. The fake 
 Screenshot of Demo-One:
 
 ![mindhead protodemo](http://farm7.static.flickr.com/6161/6213797373_d010b8ae98.jpg)
+
+NOTE: got sidetracked before I could upload (reusable) code from the demos I had finished. You can at least watch these demo videos though: http://vimeo.com/mindhead
+
